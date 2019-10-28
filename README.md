@@ -8,9 +8,13 @@ https://github.com/ACloudGuru-Resources/Course_AWS_Certified_Machine_Learning/bl
 Interesting process for shuffling a dataset:
 
 np.random.seed(0)
+
 rand_split = np.random.rand(len(df))
+
 train_list = rand_split < 0.8
+
 val_list = (rand_split >= 0.8) & (rand_split < 0.9)
+
 test_list = rand_split >= 0.9
 
  #### This dataset will be used to train the model.
